@@ -1,0 +1,28 @@
+//1. Create a server.js file initialize npm and install dependencies
+//  express, dotenv, cors, mongodb, ejs, nodemon (--save-dev)
+
+//2.  Require dependencies
+
+//3.  Declare variables
+
+//4. Create gitignore file
+
+//5. Connect to MongoDB - add connection string to .env file
+
+//6. Create  Port
+
+//----Test Mongo and Port connection
+
+//7. Set middleware
+
+//8. Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views
+
+//9. Add content to main.js, style.css, index.ejs
+
+//10. Create heroku repo
+
+// heroku login
+// heroku create "name"
+// echo "web: node server.js" > Procfile
+// git add . (take .env out of .gitignore, as heroku requires the connection string to make the connection to the db)
+// git commit -m "changes"
