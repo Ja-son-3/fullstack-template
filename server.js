@@ -23,6 +23,14 @@ app.use(express.urlencoded({extended:true})) //returns middleware that only pars
 app.use(express.json()) //helps express parse/read json data
 app.use(cors()) 
 
+app.get('/', async (req,res) => {
+    try {
+        res.render('index.ejs')
+    } catch (error) {
+        res.status(500).send({message: error.message})
+    }
+})
+
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is running on port ${process.env.PORT}`)
 })
